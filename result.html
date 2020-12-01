@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Results</title>
+    <link rel="stylesheet" href="style2.css">
+    <script defer src="myscript2.js"></script>
+    <canvas id="canvas"></canvas>
+  </head>
+
+  <body>
+    <!--Information (how to read)-->
+    <a href="index.html" class="button"><span>Back</span></a>
+    <!--Title-->
+    <div class="title">
+      <h1>Results</h1>
+      <span id=”down” style="font-size:160%;">&#9660;</span>
+    </div>
+    <!--Explanation-->
+    <div class="container_explanation">
+      <div class="article1">
+        <h1 class="explain_head">How to Read</h1>
+        <p> In this data, the left words represent the starting and ending article of the wiki game. The top is starting and the bottom is ending. In the middle, the circles represents the number of clicks while the red bar represents the time used to complete the game. The numbers on the right shows the score of the game, showing the effectiveness of the collaboration.</p>
+      </div>
+      </div>  
+    <!--Selecting categories-->
+    <div class="container head">
+      <div class="category time">
+        <h1 id="time">Time</h1>
+      </div>
+      <div class="category clicks">
+        <h1 id="click">No. of Clicks</h1>
+      </div>
+      <div class="category effectiveness">
+        <h1 id="effective">Effectiveness</h1>
+      </div>
+    </div>
+
+    <!--Data Visualization-->
+    <div class="maincontainer">
+      <div class="container containerA">
+        <!--Words-->
+        <div class="articlebox">
+          <div class="words">
+            <div class="word1">
+              <h1 id="word_1_1"></h1>
+            </div>
+            <span id=”line” style="font-size:150%;">&#x7C;</span>
+            <div class="word2">
+              <h1 id="word_1_2"></h1>
+            </div>
+          </div>
+          <!--Middle Data-->
+          <canvas id="circle1" class="data" width="750px" height="160px"></canvas>
+          <!--Score-->
+          <div class="score">
+            <h1 id="score1"></h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="container containerB">
+        <!--Words-->
+        <div class="articlebox">
+          <div class="words">
+            <div class="word1">
+              <h1 id="word_2_1"> </h1>
+            </div>
+            <span id=”line” style="font-size:150%;">&#x7C;</span>
+            <div class="word2">
+              <h1 id="word_2_2"> </h1>
+            </div>
+          </div>
+          <!--Middle Data-->
+          <canvas id="circle2" class="data" width="750px" height="160px"></canvas>
+          <!--Score-->
+          <div class="score">
+            <h1 id="score2"></h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="container containerC">
+        <!--Words-->
+        <div class="articlebox">
+          <div class="words">
+            <div class="word1">
+              <h1 id="word_3_1"> </h1>
+            </div>
+            <span id=”line” style="font-size:150%;">&#x7C;</span>
+            <div class="word2">
+              <h1 id="word_3_2"> </h1>
+            </div>
+          </div>
+          <!--Middle Data-->
+          <canvas id="circle3" class="data" width="750px" height="160px"></canvas>
+          <!--Score-->
+          <div class="score">
+            <h1 id="score3"></h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="container containerD">
+        <!--Words-->
+        <div class="articlebox">
+          <div class="words">
+            <div class="word1">
+              <h1 id="word_4_1"> </h1>
+            </div>
+            <span id=”line” style="font-size:150%;">&#x7C;</span>
+            <div class="word2">
+              <h1 id="word_4_2"> </h1>
+            </div>
+          </div>
+          <!--Middle Data-->
+          <canvas id="circle4" class="data" width="750px" height="160px"></canvas>
+          <!--Score-->
+          <div class="score">
+            <h1 id="score4"></h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="container containerE">
+        <!--Words-->
+        <div class="articlebox">
+          <div class="words">
+            <div class="word1">
+              <h1 id="word_5_1"> </h1>
+            </div>
+            <span id=”line” style="font-size:150%;">&#x7C;</span>
+            <div class="word2">
+              <h1 id="word_5_2"> </h1>
+            </div>
+          </div>
+          <!--Middle Data-->
+          <canvas id="circle5" class="data" width="750px" height="160px"></canvas>
+          <!--Score-->
+          <div class="score">
+            <h1 id="score5"></h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="container containerF">
+        <!--Words-->
+        <div class="articlebox">
+          <div class="words">
+            <div class="word1">
+              <h1 id="word_6_1"> </h1>
+            </div>
+            <span id=”line” style="font-size:150%;">&#x7C;</span>
+            <div class="word2">
+              <h1 id="word_6_2"> </h1>
+            </div>
+          </div>
+          <!--Middle Data-->
+          <canvas id="circle6" class="data" width="750px" height="160px"></canvas>
+          <!--Score-->
+          <div class="score">
+            <h1 id="score6"></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--play button-->
+    <a href="play.html" class="button2"><span>I Want To Play</span></a>
+  </body>
+
+</html>

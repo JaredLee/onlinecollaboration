@@ -1,0 +1,293 @@
+* {
+	box-sizing: border-box;
+  }
+  
+  body {
+	background: linear-gradient(to bottom, #B721FF, #2AF598, #fec051, #FA709A);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin: 0px;
+  }
+  
+  body:before {
+	content: '';
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	z-index: -1;
+	background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), #21D4FD 75%);
+	margin: 0px;
+  }
+  
+  #canvas {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	margin: 0px;
+  }
+  
+  .button {
+	  position: absolute;
+	background-color: rgba(255, 255, 255, 0.3);
+	color: white;
+	width: 130px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	border: none;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 30px;
+	border-radius: 50px;
+	margin-bottom: 60px;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-size: cover;
+	margin: 20px;
+  }
+
+  .button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.3s;
+  }
+  
+  .button span:after {
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	transition: 0.3s;
+	color: black;
+  }
+  
+  .button:hover span {
+	color: black;
+  }
+  
+  .button:hover {
+	background-color: white;
+	transition: 0.3s;
+  }
+  
+  .title {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-size: cover;
+	margin-bottom: 30px;
+	margin: 0px;
+	padding: 0px;
+	font-family: monospace;
+	font-size: 25px;
+	color: #FFF;
+  }
+  
+  #down {
+	position: absolute;
+	top: 85vh;
+	padding: 20px;
+	font-size: 2.5em;
+	size: 100px;
+  }
+  
+/* Explanation*/
+.container_explanation{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center; 
+	background-size: cover;
+	margin: auto;
+	width: auto;
+}
+.explain_head {
+	text-align: center;
+}
+
+.article1
+{
+	width: 1000px;
+	margin:0;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 25px;
+	font-weight: 100;
+	line-height: 1.5em;
+	text-align: justify;
+	background-color: #FFF;
+	margin: 80px 10%;
+	padding: 30px 60px;
+	border-radius: 20px;
+	box-shadow: 0 3px 26px 0 rgba(0,0,0,0.20);
+	color: #464646;
+}
+
+  /* MENU BAR */
+  
+  .container {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+  }
+  
+  .effectiveness {
+	cursor: pointer;
+	grid-column: 6/span 2;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+  }
+  
+  .time {
+	cursor: pointer;
+	grid-column: 2/span 2;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+  }
+  
+  .clicks {
+	cursor: pointer;
+	grid-column: 4/span 2;
+  
+  }
+  
+  .category {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: white;
+	background-color: rgba(255, 255, 255, 0.2);
+	padding-right: 20px;
+	padding-left: 30px;
+  }
+  
+  .category:hover {
+	background-color: rgba(0, 0, 0, 0.4);
+	transition: 0.3s;
+  }
+  
+  /* DATA VISUALIZATION */
+  
+  .words {
+	grid-column: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .word1 {
+	  text-align: center;
+	margin-bottom: -25px;
+  }
+  
+  .word2 {
+	text-align: center;
+	margin-top: -15px;
+  }
+  
+  #line {
+	position: absolute;
+	top: 85vh;
+	padding: 20px;
+	font-size: 2em;
+  }
+  
+  .score {
+	  cursor: default;
+	grid-column: 6;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 50px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .data {
+	grid-column: 2/5;
+	width: 750px;
+	height: 160px;
+	margin-top: 50px;
+	margin-bottom: 0px;
+  }
+  
+  .articlebox {
+	grid-column: 2/8;
+	background-color: rgb(255, 255, 255, 1);
+	border-radius: 20px;
+	box-shadow: 0 3px 26px 0 rgba(0, 0, 0, 0.20);
+	color: #3c3c3c;
+	margin-top: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+  
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+  }
+  
+  .button2 {
+	background-color: rgba(255, 255, 255, 0.3);
+	color: white;
+	width: 805px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	border: none;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 30px;
+	border-radius: 12px;
+	margin-bottom: 60px;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-size: cover;
+	margin: auto;
+	margin-top: 60px;
+	margin-bottom: 60px;
+  }
+  
+  .button2 span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+  }
+  
+  .button2 span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+	color: black;
+  }
+  
+  .button2:hover span {
+	padding-right: 25px;
+	color: black;
+  }
+  
+  .button2:hover span:after {
+	opacity: 1;
+	right: 0;
+  }
+  
+  .button2:hover {
+	background-color: white;
+	transition: 0.5s;
+  }
+  

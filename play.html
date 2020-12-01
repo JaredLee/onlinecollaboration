@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Play</title>
+        <link rel="stylesheet" href="style3.css">
+        <script defer src="myscript3.js"></script>
+        <canvas id="canvas"></canvas>
+    </head>
+    <body>
+        <a href="result.html" class="button"><span>Back</span></a>
+
+        <!--Landing-->
+        <div class="title">
+            <h1>I Want To Play!</h1>
+            <span id=”down” style="font-size:160%;">&#9660;</span>
+          </div>
+        <!--Article-->
+        <div class="container">
+            <div class="article1">
+                <h1>How to Play</h1>
+                <p>So you want to try it out too? Then let me explain the details of the game again. Firstly, you need to have 2 articles that determines your start and end point of the game. Conveniently, there are 2 boxes below that helps you get 2 random Wikipedia articles. Just click the first box to generate the starting article and the second for the final article! </p>
+              
+            <!--Random 2 articles button-->
+        <div class="articlecontainer">
+            <a href="https://Wikipedia.org/wiki/Special:Random" target="_blank" class="wikiarticle">Start</a>
+            <a href="https://Wikipedia.org/wiki/Special:Random" target="_blank" class="wikiarticle">End</a>
+        </div>
+        <p>Now that you have both of your article, here is what you have to do: <br><br>1) Read your final article to see where you need to navigate to. <br>2) Go to your 'starting article'.<br>3) Click the hyperlinks within that article and the following ones until you have reached the same page as your final article. </p>
+        <p>There are 2 things that you need to keep track of when playing this game, which is the <b>number of clicks</b> and also the <b>time taken</b>. For the number of clicks, after reaching the final article, right click the arrow that returns you to the previous page and click to see your browser history. From there, just count the number of articles inside to determine the number of clicks. <br><br> For time, below is a stopwatch where you can use to keep track of the time spent when playing the game. Simply click start and click your first article to begin the game. After reaching the final article, you can come back here to stop the time.</p>
+            <!--Stopwatch-->
+        <div class="stopwatch_container">
+            <div class="stopwatch">
+                <span id="minute">0</span>
+                :
+                <span id="second">00</span>
+                :
+                <span id="milisec">00</span>
+            </div>
+        <input type="button" class="timercontrol" id="startTimer" value="Start" onclick="start();">
+        <input type="button" class="timercontrol" id="stopTimer" value="Stop"  onclick="stop();">
+        <input type="button" class="timercontrol" id="resetTimer" value="Reset"  onclick="reset();">
+        </div>
+        
+             <!--Google Form link-->
+             <p>After finishing your game, click the button below to submit your data.</p>
+            <a href="https://forms.gle/yjnuWRw16jzxbRo1A" target="_blank" class="submitbutton">Submit</a>
+            </div>
+         </div>
+        <!--Contact Details-->
+    </body>
+</html>
